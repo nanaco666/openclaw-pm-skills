@@ -65,6 +65,29 @@ skills/ga4-data-api/SKILL.md
 
 ---
 
+
+### 2. `gog`
+
+Use when an agent needs to:
+- connect Google Workspace accounts
+- read Gmail, Calendar, Drive, Docs, Sheets, Contacts
+- build email/calendar workflows in OpenClaw
+- authorize one or more Google accounts for work automation
+
+Location:
+
+```text
+skills/gog
+```
+
+Entry file:
+
+```text
+skills/gog/SKILL.md
+```
+
+---
+
 ## Zero-error operating rules
 
 Before an AI installs or uses any skill from this repo:
