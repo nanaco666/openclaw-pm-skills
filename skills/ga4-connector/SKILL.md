@@ -1,5 +1,5 @@
 ---
-name: google-analytics-4
+name: ga4-connector
 description: Query Google Analytics 4 (GA4) data through the Google Analytics Data API for trends, countries, sources, pages, and conversion analysis. Use when a user wants GA/GA4 metrics inside OpenClaw, wants to set up GA4 access, or needs GA4 reports such as activeUsers, sessions, country/source breakdowns, page trends, or key event analysis. For enterprise/internal GA data, first verify which Google account actually has permission before proposing service accounts or extra cloud setup.
 ---
 

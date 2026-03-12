@@ -43,7 +43,7 @@ Each folder under `skills/` is a self-contained skill.
 
 ## Skills
 
-### 1. `google-analytics-4`
+### 1. `GA4 Connector`
 
 Use when an agent needs to:
 - connect Google Analytics 4 to OpenClaw
@@ -54,13 +54,13 @@ Use when an agent needs to:
 Location:
 
 ```text
-skills/google-analytics-4
+skills/ga4-connector
 ```
 
 Entry file:
 
 ```text
-skills/google-analytics-4/SKILL.md
+skills/ga4-connector/SKILL.md
 ```
 
 ---
@@ -115,13 +115,13 @@ Before an AI installs or uses any skill from this repo:
 ```bash
 git clone https://github.com/nanaco666/openclaw-pm-skills.git
 mkdir -p ~/.openclaw/workspace/skills
-cp -R openclaw-pm-skills/skills/google-analytics-4 ~/.openclaw/workspace/skills/
+cp -R openclaw-pm-skills/skills/ga4-connector ~/.openclaw/workspace/skills/
 ```
 
 Then read:
 
 ```text
-~/.openclaw/workspace/skills/google-analytics-4/SKILL.md
+~/.openclaw/workspace/skills/ga4-connector/SKILL.md
 ```
 
 ### Option B — use the repo as a reference pack
@@ -134,12 +134,12 @@ If direct install is not appropriate, keep the repo cloned and load only the nee
 
 After installing a skill, an AI should always validate the smallest useful path.
 
-For `google-analytics-4`, the minimum validation is:
+For `GA4 Connector`, the minimum validation is:
 
 ```bash
-bash ~/.openclaw/workspace/skills/google-analytics-4/scripts/install_ga4_openclaw.sh <GA4_PROPERTY_ID> <PATH_TO_CLIENT_SECRET_JSON>
+bash ~/.openclaw/workspace/skills/ga4-connector/scripts/install_ga4_openclaw.sh <GA4_PROPERTY_ID> <PATH_TO_CLIENT_SECRET_JSON>
 
-python3 ~/.openclaw/workspace/skills/google-analytics-4/scripts/ga4_query.py \
+python3 ~/.openclaw/workspace/skills/ga4-connector/scripts/ga4_query.py \
   --metrics activeUsers,sessions \
   --dimensions date \
   --start 7daysAgo \
@@ -168,4 +168,4 @@ Avoid fluffy README-style prose inside skills. Keep the repository and each skil
 
 - Repository visibility: **private**
 - Intended audience: trusted collaborators with access
-- First valid skill: **`google-analytics-4`**
+- First valid skill: **`GA4 Connector`**
