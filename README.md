@@ -88,6 +88,29 @@ skills/gog/SKILL.md
 
 ---
 
+
+### 3. `TapDB Connector`
+
+Use when an agent needs to:
+- connect OpenClaw to TapDB
+- configure MCP keys for CN / SG
+- validate TapDB project access
+- query source, revenue, retention, lifecycle, and whale-user style metrics for Tap games
+
+Location:
+
+```text
+skills/tapdb-connector
+```
+
+Entry file:
+
+```text
+skills/tapdb-connector/SKILL.md
+```
+
+---
+
 ## Zero-error operating rules
 
 Before an AI installs or uses any skill from this repo:
